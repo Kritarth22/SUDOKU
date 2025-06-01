@@ -13,4 +13,6 @@ A browser-based Sudoku game developed using HTML, CSS, and JavaScript.
 
 • Clean and responsive UI for all screen sizes.
 
+![image alt](https://github.com/Kritarth22/SUDOKU/blob/3f562bff0bcb7a54a3a233c0483d7f05858d9e41/image/portfolio_3.png)
+
 
