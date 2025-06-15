@@ -1,0 +1,170 @@
+.cell[readonly] {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+body {
+    font-family: cursive, sans-serif;
+    background-color: #042b3b;
+    background-image: url('./images/image.jpeg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 42px;
+    color: #F5EEDC;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    flex-grow: 1;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.timer {
+    color: #F5EEDC;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.hints-remaining {
+    color: #F5EEDC;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* .cell:focus {
+    outline: 2px solid #669dd7;
+    background-color: rgba(102, 157, 215, 0.2);
+} */
+
+.lightBackground {
+    background-color: #dda853dc;
+}
+
+.darkBackground {
+    background-color: #ead49f;
+}
+
+.buttonContainer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+}
+
+.buttonContainer button {
+    min-width: 90px;
+    height: 40px;
+    font-family: cursive;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #eab765;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0 15px;
+}
+
+button:hover {
+    background-color: #669dd7;
+    transform: scale(1.05);
+}
+
+.highlight-row {
+    background-color: rgba(139, 166, 198, 0.485) !important;
+}
+
+.highlight-col {
+    background-color: rgba(139, 166, 198, 0.485) !important;
+}
+
+.highlight-subgrid {
+    background-color: rgba(139, 166, 198, 0.485) !important;
+}
+/* rgba(102, 157, 215, 0.344) */
+.hint-cell {
+    background-color: rgba(44, 97, 153, 0.801) !important;
+    animation: hintPulse 1.5s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes solveAnimation {
+    0% { transform: scale(1); background-color: inherit; }
+    50% { transform: scale(1.05); background-color: #4c83a3; }
+    /* #7b6033 */
+    100% { transform: scale(1); background-color: inherit; }
+}
+
+@keyframes hintPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.cell-animate {
+    animation: solveAnimation 0.3s ease-in-out;
+}
