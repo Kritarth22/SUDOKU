@@ -6,7 +6,7 @@
 body {
     font-family: cursive, sans-serif;
     background-color: #042b3b;
-    background-image: url('./images/image.jpeg');
+    background-image: url('images/image.jpeg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
