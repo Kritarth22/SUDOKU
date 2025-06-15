@@ -1,4 +1,4 @@
-#🧩 **Sudoku Puzzle Game**
+# 🧩 Sudoku Puzzle Game
 
 A browser-based Sudoku game developed using HTML, CSS, and JavaScript.
 
